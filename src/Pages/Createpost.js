@@ -63,7 +63,7 @@ export default function UserCreate() {
 
 
 
-    fetch('http://localhost:5000/api/post/addpost', {
+    fetch('https://sheltered-meadow-18963.herokuapp.com/api/post/addpost', {
       method: 'POST',
       headers: {
         Accept: 'application/form-data'

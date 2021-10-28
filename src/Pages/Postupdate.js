@@ -47,7 +47,7 @@ export default function UserUpdate() {
    
   const { id } = useParams();
   useEffect(() => {
-    fetch("http://localhost:5000/api/post/"+id)
+    fetch("https://sheltered-meadow-18963.herokuapp.com/api/post/"+id)
       .then(res => res.json())
       .then(
 
@@ -72,7 +72,7 @@ export default function UserUpdate() {
     data.append( 'description', description);
     data.append( 'image', fileData);
 
-    fetch('http://localhost:5000/api/post/editpost/'+id, {
+    fetch('https://sheltered-meadow-18963.herokuapp.com/api/post/editpost/'+id, {
       method: 'PUT',
       headers: {
         Accept: 'application/form-data',

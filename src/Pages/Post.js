@@ -36,7 +36,7 @@ const useStyles = makeStyles((theme) => ({
 export default function UserList() {
 
 
- const url = "http://localhost:5000/";
+ const url = "https://sheltered-meadow-18963.herokuapp.com/";
   const [data, setData] = useState([])
 
 const columns =[
@@ -63,7 +63,7 @@ const columns =[
   }, [])
   
   const UsersGet = () => {
-    fetch("http://localhost:5000/api/post")
+    fetch("https://sheltered-meadow-18963.herokuapp.com/api/post")
       .then(res => res.json())
       .then(
          res => setData(res)
@@ -79,7 +79,7 @@ const columns =[
     var data = {
       'id': id
     }
-    fetch('http://localhost:5000/api/post/deletepost/'+id, {
+    fetch('https://sheltered-meadow-18963.herokuapp.com/api/post/deletepost/'+id, {
       method: 'DELETE',
       headers: {
         Accept: 'application/form-data',
